@@ -1,0 +1,1 @@
+# inversify-modules
