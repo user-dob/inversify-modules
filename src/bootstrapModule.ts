@@ -1,6 +1,6 @@
-import { ClassModule } from 'src/interfaces';
-import { Module } from 'src/Module';
-import { ModuleBuilder } from 'src/ModuleBuilder';
+import { ClassModule } from './interfaces';
+import { Module } from './Module';
+import { ModuleBuilder } from './ModuleBuilder';
 
 export const bootstrapModule = (target: ClassModule): Module => {
     const builder = new ModuleBuilder(target);

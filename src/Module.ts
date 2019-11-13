@@ -1,6 +1,6 @@
 import { Container, interfaces } from 'inversify';
-import { ModuleProps, ClassModule, Provider } from 'src/interfaces';
-import { MODULE_METADATA_KEY } from 'src/annotation/module';
+import { ModuleProps, ClassModule, Provider } from './interfaces';
+import { MODULE_METADATA_KEY } from './annotation/module';
 
 export class Module {
     private container: Container;

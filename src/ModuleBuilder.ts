@@ -1,5 +1,5 @@
-import { ClassModule } from 'src/interfaces';
-import { Module } from 'src/Module';
+import { ClassModule } from './interfaces';
+import { Module } from './Module';
 import { Container } from 'inversify';
 
 export class ModuleBuilder {

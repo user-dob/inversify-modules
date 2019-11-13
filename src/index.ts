@@ -1,8 +1,8 @@
 import 'reflect-metadata';
 
-import { module } from 'src/annotation/module';
-import { ModuleBuilder } from 'src/ModuleBuilder';
-import { bootstrapModule } from 'src/bootstrapModule';
+import { module } from './annotation/module';
+import { ModuleBuilder } from './ModuleBuilder';
+import { bootstrapModule } from './bootstrapModule';
 
 export {
     module,

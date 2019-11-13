@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import { injectable } from 'inversify';
-import { module, bootstrapModule } from 'src';
+import { module, bootstrapModule } from '../';
 
 describe('ModuleBuilder', () => {
 

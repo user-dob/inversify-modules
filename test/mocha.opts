@@ -1,4 +1,2 @@
 -r ts-node/register
--r tsconfig-paths/register
---inspect
 test/**/*.spec.ts

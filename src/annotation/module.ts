@@ -1,5 +1,5 @@
 import { injectable } from 'inversify';
-import { ClassModule, ModuleProps } from 'src/interfaces';
+import { ClassModule, ModuleProps } from '../interfaces';
 
 export const MODULE_METADATA_KEY = Symbol.for('MODULE_METADATA_KEY');
 
