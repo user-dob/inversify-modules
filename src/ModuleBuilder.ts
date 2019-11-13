@@ -40,7 +40,7 @@ export class ModuleBuilder {
         return module;
     }
 
-    buid(): Module {
+    build(): Module {
         return this.initModule(this.target);
     }
 }
