@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import { injectable } from 'inversify';
-import { module, bootstrapModule } from '../';
+import { module, ModuleBuilder, bootstrapModule } from '../';
 
 describe('ModuleBuilder', () => {
 
@@ -24,9 +24,12 @@ describe('ModuleBuilder', () => {
                 B
             ]
         })
-        class TestModule {}
+        class TestModule {
+            run() {}
+        }
 
-        const testModule = bootstrapModule(TestModule);
+        const builder = new ModuleBuilder(TestModule);
+        const testModule = builder.build();
 
         testModule.getProvider(B);
 
@@ -66,7 +69,8 @@ describe('ModuleBuilder', () => {
         })
         class TestModule {}
 
-        const testModule = bootstrapModule(TestModule);
+        const builder = new ModuleBuilder(TestModule);
+        const testModule = builder.build();
 
         testModule.getProvider(C);
 
@@ -110,7 +114,8 @@ describe('ModuleBuilder', () => {
         })
         class TestModule {}
 
-        const testModule = bootstrapModule(TestModule);
+        const builder = new ModuleBuilder(TestModule);
+        const testModule = builder.build();
 
         testModule.getProvider(B);
 

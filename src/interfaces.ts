@@ -1,6 +1,6 @@
 import { Container, interfaces } from 'inversify';
 
-export type ClassModule = interfaces.Newable<any>;
+export type ClassModule<T = any> = interfaces.Newable<T>;
 
 export type ClassProvider = {
     provide: interfaces.ServiceIdentifier<any>;
