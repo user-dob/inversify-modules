@@ -1,3 +1,4 @@
+import 'reflect-metadata';
 import { expect } from 'chai';
 import { injectable } from 'inversify';
 import { module, ModuleBuilder, bootstrapModule } from '../';

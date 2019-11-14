@@ -1,5 +1,3 @@
-import 'reflect-metadata';
-
 import { module } from './annotation/module';
 import { ModuleBuilder } from './ModuleBuilder';
 import { bootstrapModule } from './bootstrapModule';
